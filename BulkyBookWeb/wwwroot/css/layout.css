@@ -1,0 +1,141 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    box-shadow: 0 8px 8px -8px rgba(0,0,0,.1);
+    
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(244,244,244);
+    font-family: BebasNeue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.index-wrapper-outer {
+    
+    background-image: url(https://cdn.lensa.com/img/landing-page/landing_hero_mobile-min.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.index-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 100px 20px 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+
+.index-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+.index-input-wrapper > input {
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+
+
+h1,p {
+    margin: 0;
+}
+
+.nav-wrapper {
+    
+}
+
+.lets-find-text {
+    text-transform: uppercase;
+}
+
+.search-jobs-btn {
+    background-color: rgb(254,120,54);
+    width: fit-content;
+    padding: 15px 60px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    
+    
+}
+
+.open-jobs-text {
+    text-transform: uppercase;
+    border-bottom: 5px solid rgb(55,170,249);
+    width: fit-content;
+    padding: 10px;
+}
+
+.open-jobs {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: auto;
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 800px) {
+    .index-wrapper-outer {
+
+
+        background-image: url(https://cdn.lensa.com/img/landing-page/landing_hero-min.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .index-wrapper {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+
+    .index-input-wrapper {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .index-input-wrapper > input:nth-child(1) {
+
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+    }
+    .index-input-wrapper > input:nth-child(2) {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+
+    .lets-find-text {
+        padding-bottom: 20px;
+        font-size: 3rem;
+    }
+}

@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        const string TheExample = "hello";
+        ViewData["Example"] = TheExample;
         return View();
     }
 
@@ -24,6 +26,11 @@ public class HomeController : Controller
     }
 
     public IActionResult Jobs()
+    {
+        return View();
+    }
+    
+    public IActionResult Companies()
     {
         return View();
     }

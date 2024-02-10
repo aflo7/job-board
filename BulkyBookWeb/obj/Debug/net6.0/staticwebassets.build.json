@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+HMNQKy+XyXnv18sulBP+jmFoCzf1QMCSKYhy74xkAw=",
+  "Hash": "U2L1WVqag8wMnBR/isoY3iO8ZMSLvdxAr+cufdJZVpA=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/andres/RiderProjects/BulkyBook/BulkyBookWeb/obj/Debug/net6.0/scopedcss/projectbundle/BulkyBookWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/andres/RiderProjects/BulkyBook/BulkyBookWeb/wwwroot/css/layout.css",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andres/RiderProjects/BulkyBook/BulkyBookWeb/wwwroot/",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "css/layout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/layout.css"
     },
     {
       "Identity": "/Users/andres/RiderProjects/BulkyBook/BulkyBookWeb/wwwroot/css/site.css",

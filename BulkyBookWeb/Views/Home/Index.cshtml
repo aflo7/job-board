@@ -2,7 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">!!!!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="index-wrapper-outer">
+    
+    <div class="index-wrapper">
+        <h1 class="lets-find-text">Let's find your next job</h1>
+        <div class="index-input-wrapper">
+            
+            <input type="text" placeholder="Search for jobs" />
+            <input type="text" placeholder="Location of your dream job?" />
+        </div>
+        <p>We are not an employer nor are we affiliated with any of the employers on this site.
+
+        </p>
+        <button type="button" class="search-jobs-btn">Search Jobs</button>
+        <div>
+
+        </div>
+    </div>
+    
+    <h1>@ViewData["Example"]</h1>
+</div>
+
+<div class="open-jobs-wrapper">
+    <div class="open-jobs">
+        
+        <h2 class="open-jobs-text">Open Jobs</h2>
+        @* <div></div> *@
+        
+        @*this is where we render each category*@
+    </div>
+
 </div>

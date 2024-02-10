@@ -4,46 +4,34 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/BulkyBookWeb.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="css/layout.css"/>
 </head>
 <body>
 <header>
-    <nav>
-        <div style="display: flex; align-items: center">
-            
-            <h1>Job Board</h1>
-            <div><a asp-controller="Home" asp-action="Jobs">Jobs</a></div>
-            <div>Companies</div>
-            <div>Insights</div>
-
+    
+    <div class="nav-wrapper">
+        <nav>
+            <div style="display: flex; align-items: center; gap: 30px;">
+                <h1><a asp-controller="Home" asp-action="Index">Job Board</a></h1>
+                <div><a asp-controller="Home" asp-action="Jobs">Jobs</a></div>
+                <div><a asp-controller="Home" asp-action="Companies">Companies</a></div>
             </div>
 
 
-        <div style="display: flex">
-            <div>
-                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <div style="display: flex; align-items: center">
+                <div>
+                    Profile
+                </div>
             </div>
-            <div>
-                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </div>
-            <div>
-                Profile
-            </div>
-            <div>Log out</div>
-        </div>
-    </nav>
+        </nav>
+        
+    </div>
 </header>
 <div class="container">
-    <main role="main" class="pb-3">
+    <main class="pb-3">
         @RenderBody()
     </main>
 </div>
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
