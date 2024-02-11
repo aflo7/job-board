@@ -2,7 +2,7 @@ Description: Job Board Full Stack Project
 
 Tech used: ASP.NET MVC 6.0, MS SQL Server, C#, HTML, CSS
 
-The main database models are: Company, Category (Job Category), Job, and JobListing. See the Entity Relationship diagram below.
+The main database models are: Companies, Categories (Job Categories), Jobs, and JobListings. See the Entity Relationship diagram below.
 
 ![alt](./model.jpg)
 
