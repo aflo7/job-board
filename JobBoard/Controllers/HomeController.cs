@@ -19,9 +19,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<Category> TheCategories = _db.Categories;
-        // ViewData["TheCategories"] = TheCategories;
-        return View(TheCategories);
+        IEnumerable<Category> Categories = _db.Categories;
+        return View(Categories);
     }
 
     public IActionResult Privacy()
@@ -44,10 +43,6 @@ public class HomeController : Controller
         return View(Jobs);
     }
     
-    public IActionResult Companies()
-    {
-        return View();
-    }
     
     public IActionResult Profile()
     {

@@ -13,15 +13,23 @@
     <div class="nav-wrapper">
         <nav>
             <div style="display: flex; align-items: center; gap: 30px;">
-                <h1><a asp-controller="Home" asp-action="Index">Job Board</a></h1>
-                <div><a asp-controller="Home" asp-action="Jobs">Jobs</a></div>
-                <div><a asp-controller="Home" asp-action="Companies">Companies</a></div>
+                <h1>
+                    <a asp-controller="Home" asp-action="Index">Job Board</a>
+                </h1>
+                <div>
+                    <a asp-controller="Listings" asp-action="All">Listings</a>
+                </div>
+                <div>
+                    <a asp-controller="Company" asp-action="Companies">Companies</a>
+                </div>
             </div>
 
 
             <div style="display: flex; align-items: center">
                 
-                <div><a asp-controller="Home" asp-action="Profile">Profile</a></div>
+                <div>
+                    <a asp-controller="Home" asp-action="Profile">Profile</a>
+                </div>
 
             </div>
         </nav>

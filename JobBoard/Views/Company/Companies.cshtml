@@ -1,0 +1,23 @@
+
+@model IEnumerable<Companies>
+
+@{
+    ViewData["Title"] = "Companies";
+}
+
+
+
+<div class="open-jobs-wrapper">
+<p style="padding: 20px">Companies / All</p>
+
+@foreach (var obj in Model)
+{
+    <div>
+                
+        <div>
+            @obj.company_name
+        </div>
+                
+    </div>
+}
+</div>

@@ -1,0 +1,27 @@
+@model IEnumerable<JobListings>
+@{
+    ViewData["Title"] = "Listings";
+}
+
+<div class="open-jobs-wrapper">
+<p style="padding: 20px">Listings / All</p>
+
+
+    @foreach (var obj in Model)
+    {
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+
+            <strong>
+                @obj.listing_title
+
+            </strong>
+            <div>
+                @obj.listing_description
+            </div>
+            <div style="color: gray">
+                Posted @obj.listing_date.ToString("MMMM dd, yyyy")
+            </div>
+
+        </div>
+    }
+</div>

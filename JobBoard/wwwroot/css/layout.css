@@ -113,6 +113,8 @@ h1,h2,p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
     
 }
 .open-jobs-wrapper > div {

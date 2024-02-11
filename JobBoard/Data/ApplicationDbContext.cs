@@ -13,5 +13,10 @@ public class ApplicationDbContext : DbContext
     public DbSet<Category> Categories { get; set; }
     
     public DbSet<Job> Job { get; set; }
+    
+    public DbSet<Companies> Companies { get; set; }
+
+    public DbSet<JobListings> JobListings { get; set; }
+
 
 }
