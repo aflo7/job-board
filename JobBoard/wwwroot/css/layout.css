@@ -135,8 +135,16 @@ h1,h2,p {
     margin: 0 auto;
 }
 
+.get-free-job-alerts-btn {
+    display: none;
+}
+
 
 @media screen and (min-width: 800px) {
+    .get-free-job-alerts-btn {
+        display: block;
+    }
+    
     .index-wrapper-outer {
 
 
