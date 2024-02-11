@@ -4,6 +4,7 @@ namespace BulkyBookWeb.Models;
 
 public class Category
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
+    [Key]
+    public int category_id { get; set; }
+    public string category_name { get; set; }
 }

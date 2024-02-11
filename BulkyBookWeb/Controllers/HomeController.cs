@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using BulkyBookWeb.Data;
 using Microsoft.AspNetCore.Mvc;
 using BulkyBookWeb.Models;
 
@@ -7,17 +8,23 @@ namespace BulkyBookWeb.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly ApplicationDbContext _db;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
     {
         _logger = logger;
+        _db = db;
     }
 
     public IActionResult Index()
     {
-        const string TheExample = "hello";
-        ViewData["Example"] = TheExample;
-        return View();
+        const string theString = "angel_is_gay";
+        // ViewData["Example"] = TheExample;
+        IEnumerable<Category> theCategories = _db.Categories;
+        // Console.WriteLine(theCategories);
+        ViewData["TheCategories"] = theCategories;
+
+        return View(theCategories);
     }
 
     public IActionResult Privacy()

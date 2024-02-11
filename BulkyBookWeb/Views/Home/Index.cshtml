@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Category>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -20,17 +21,17 @@
 
         </div>
     </div>
-    
-    <h1>@ViewData["Example"]</h1>
 </div>
 
 <div class="open-jobs-wrapper">
     <div class="open-jobs">
         
         <h2 class="open-jobs-text">Open Jobs</h2>
-        @* <div></div> *@
-        
-        @*this is where we render each category*@
     </div>
+    
+    @foreach (var obj in Model)
+    {
+        <div>@obj.category_name</div>
+    }
 
 </div>
