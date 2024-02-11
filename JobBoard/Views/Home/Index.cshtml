@@ -34,14 +34,11 @@
     @foreach (var obj in Model)
     {
         <div>
-            
-            <a asp-controller="Home" asp-action="Category">
+            <a asp-controller="Home" asp-action="Category" asp-route-CategoryId="@obj.category_id">
                 <div>
                 @obj.category_name
             </div>
             </a>
-            
-            @* <div>@obj.category_name</div> *@
         </div>
     }
     </div>

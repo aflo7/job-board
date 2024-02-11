@@ -2,6 +2,7 @@
 using BulkyBookWeb.Data;
 using Microsoft.AspNetCore.Mvc;
 using BulkyBookWeb.Models;
+using System.Linq;
 
 namespace BulkyBookWeb.Controllers;
 
@@ -37,9 +38,10 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Category()
+    public IActionResult Category(int CategoryId)
     {
-        return View();
+        IEnumerable<Job> Jobs = _db.Job.Where(job => job.category_id == CategoryId).ToList();
+        return View(Jobs);
     }
     
     public IActionResult Companies()

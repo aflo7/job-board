@@ -1,7 +1,21 @@
+
+
+@model IEnumerable<Job>
 @{
     ViewData["Title"] = "Category";
 }
 
-<div style="padding: 20px">
-    Category
+    <div class="open-jobs-wrapper">
+
+    
+     @foreach (var obj in Model)
+        {
+            <div>
+                
+                    <div>
+                    @obj.job_title
+                </div>
+                
+            </div>
+        }
 </div>
