@@ -23,15 +23,27 @@
     </div>
 </div>
 
-<div class="open-jobs-wrapper">
+<div class="open-wrapper">
     <div class="open-jobs">
         
         <h2 class="open-jobs-text">Open Jobs</h2>
     </div>
     
+    <div class="open-jobs-wrapper">
+        
     @foreach (var obj in Model)
     {
-        <div>@obj.category_name</div>
+        <div>
+            
+            <a asp-controller="Home" asp-action="Category">
+                <div>
+                @obj.category_name
+            </div>
+            </a>
+            
+            @* <div>@obj.category_name</div> *@
+        </div>
     }
+    </div>
 
 </div>

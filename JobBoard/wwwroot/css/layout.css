@@ -7,6 +7,11 @@ nav {
     
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -65,7 +70,7 @@ body {
 
 
 
-h1,p {
+h1,h2,p {
     margin: 0;
 }
 
@@ -94,14 +99,40 @@ h1,p {
     border-bottom: 5px solid rgb(55,170,249);
     width: fit-content;
     padding: 10px;
+    text-align: center;
 }
 
 .open-jobs {
-    display: grid;
-    padding: 40px;
-    grid-template-columns: auto;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
+
+.open-jobs-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.open-jobs-wrapper > div {
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 0 1px 16px rgba(0,0,0,.08);
+
+}
+
+.open-jobs-wrapper > div:hover {
+    background-color: lightgray;
+}
+
+.open-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 
 @media screen and (min-width: 800px) {
     .index-wrapper-outer {

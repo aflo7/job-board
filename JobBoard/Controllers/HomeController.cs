@@ -18,13 +18,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        const string theString = "angel_is_gay";
-        // ViewData["Example"] = TheExample;
-        IEnumerable<Category> theCategories = _db.Categories;
-        // Console.WriteLine(theCategories);
-        ViewData["TheCategories"] = theCategories;
-
-        return View(theCategories);
+        IEnumerable<Category> TheCategories = _db.Categories;
+        // ViewData["TheCategories"] = TheCategories;
+        return View(TheCategories);
     }
 
     public IActionResult Privacy()
@@ -37,7 +33,21 @@ public class HomeController : Controller
         return View();
     }
     
+    public IActionResult Job()
+    {
+        return View();
+    }
+    public IActionResult Category()
+    {
+        return View();
+    }
+    
     public IActionResult Companies()
+    {
+        return View();
+    }
+    
+    public IActionResult Profile()
     {
         return View();
     }
