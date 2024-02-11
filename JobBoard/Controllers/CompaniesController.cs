@@ -5,21 +5,23 @@ using BulkyBookWeb.Data;
 
 namespace BulkyBookWeb.Controllers;
 
-public class CompanyController : Controller
+public class CompaniesController : Controller
 {
     
-    private readonly ILogger<CompanyController> _logger;
+    private readonly ILogger<CompaniesController> _logger;
     private readonly ApplicationDbContext _db;
 
-    public CompanyController(ILogger<CompanyController> logger, ApplicationDbContext db)
+    public CompaniesController(ILogger<CompaniesController> logger, ApplicationDbContext db)
     {
         _logger = logger;
         _db = db;
     }
     // GET
-    public IActionResult Companies()
+    public IActionResult All()
     {
+        
         IEnumerable<Companies> Companies = _db.Companies;
+        @ViewData["count"] = Companies.Count();
         return View(Companies);
     }
 }

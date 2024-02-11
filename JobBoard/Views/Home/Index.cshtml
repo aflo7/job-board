@@ -4,9 +4,9 @@
 }
 
 
-<div class="index-wrapper-outer">
+<div class="index-wrapper-outer" >
     
-    <div class="index-wrapper">
+    <div class="index-wrapper" style="max-width: 850px;">
         <h1 class="lets-find-text">Let's find your next job</h1>
         <div class="index-input-wrapper">
             
@@ -34,7 +34,7 @@
     @foreach (var obj in Model)
     {
         <div>
-            <a asp-controller="Home" asp-action="Category" asp-route-CategoryId="@obj.category_id">
+            <a asp-controller="Categories" asp-action="Index" asp-route-CategoryId="@obj.category_id" asp-route-CategoryName="@obj.category_name">
                 <div>
                 @obj.category_name
             </div>

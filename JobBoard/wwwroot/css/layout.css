@@ -143,6 +143,11 @@ h1,h2,p {
 @media screen and (min-width: 800px) {
     .get-free-job-alerts-btn {
         display: block;
+        background: linear-gradient(90deg,#0072c3,#a56eff);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 100rem;
+        color: white;
     }
     
     .index-wrapper-outer {

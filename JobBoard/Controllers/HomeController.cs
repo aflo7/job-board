@@ -28,26 +28,15 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Jobs()
-    {
-        return View();
-    }
-    
-    public IActionResult Job()
-    {
-        return View();
-    }
-    public IActionResult Category(int CategoryId)
-    {
-        IEnumerable<Job> Jobs = _db.Job.Where(job => job.category_id == CategoryId).ToList();
-        return View(Jobs);
-    }
+   
+    // public IActionResult Category(int CategoryId)
+    // {
+    //     IEnumerable<Job> Jobs = _db.Job.Where(job => job.category_id == CategoryId);
+    //     return View(Jobs);
+    // }
     
     
-    public IActionResult Profile()
-    {
-        return View();
-    }
+   
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

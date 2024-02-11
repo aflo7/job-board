@@ -20,6 +20,7 @@ public class ListingsController : Controller
     public IActionResult All()
     {
         IEnumerable<JobListings> JobListings = _db.JobListings;
+        ViewData["count"] = JobListings.Count();
 
         return View(JobListings);
     }
